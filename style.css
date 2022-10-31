@@ -1,0 +1,257 @@
+/*
+  File origin: VS1LAB A1b  
+
+  CSS style is BEM. Classes used for CSS, IDs for JavaScript querying (future use).
+  CSS variables used for clarity and themability (e.g. through SSR). 
+  Inherited box sizing used for ease of including 3rd party content-box components.
+*/
+
+/* Global styling */
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  /* This approach prevents issues with 3rd party content-box components */
+  box-sizing: inherit;
+}
+
+/* Variables (example: see declaration for "a" below) */
+
+:root {
+  --link-color: #00B7FF;
+  --background-color: #efefef;
+  --border-color: #cdcdcd;
+  --gray-color: #666;
+}
+
+/* HTML element styles */
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* ### TODO ### Styles for other HTML elements */
+
+/* ... your code here ... */
+
+
+/* Grid styles (no changes required) */
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.col-1 {
+  width: calc(8.33% - 1rem);
+}
+
+.col-2 {
+  width: calc(16.66% - 1rem);
+}
+
+.col-3 {
+  width: calc(25% - 1rem);
+}
+
+.col-4 {
+  width: calc(33.33% - 1rem);
+}
+
+.col-5 {
+  width: calc(41.66% - 1rem);
+}
+
+.col-6 {
+  width: calc(50% - 1rem);
+}
+
+.col-7 {
+  width: calc(58.33% - 1rem);
+}
+
+.col-8 {
+  width: calc(66.66% - 1rem);
+}
+
+.col-9 {
+  width: calc(75% - 1rem);
+}
+
+.col-10 {
+  width: calc(83.33% - 1rem);
+}
+
+.col-11 {
+  width: calc(91.66% - 1rem);
+}
+
+.col-12 {
+  width: calc(100% - 1rem);
+}
+
+
+/* ### TODO ### Styles for Header Component */
+
+/* ... your code here ... */
+
+fieldset{
+  margin: 20px  10;
+}
+
+.header__text {
+  position: relative;
+  text-align: center;
+  
+}
+
+
+.header img {
+  align-items: left;
+  display: flex;
+  position: left;
+  
+  width: 34px;
+  height: 30px;
+  padding: 2px;
+
+}
+.header__navigation {
+  
+  
+  top: 50 px;
+  text-align: right;
+}
+
+/* ### TODO ### Styles for Main Component */
+/*.main__discovery  {
+  display: flex;
+  align-items: center;
+}*/
+.flex-container {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+
+  flex-flow: row wrap;
+  
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.flex-item-head {
+  width: 100%;
+  height: 100px;
+  background-color: lightgrey;
+  padding: 20px 10px;
+  text-align: center;
+  display: flex;
+  order:auto;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-item-1 {
+ 
+  width: 200px;
+  height: 600px;
+  margin-top: 10px;
+  order:auto;
+  align-items: stretch;
+  
+}
+.flex-item-2 {
+ 
+  height: 150px;
+  margin-top: 10px;
+  order:auto;
+  align-items: stretch;
+}
+/* ... your code here ... */
+fieldset::content{
+  position: relative;
+  text-align: left;
+  left: 3%;
+  
+  
+}
+label {
+  display: block; 
+}
+.main {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+legend {
+  background-color: white;
+  color: black;
+  padding: 3px 6px;
+  margin-left: 1%;
+  
+}
+.block {
+  display: inline-block;
+  border: 2px solid #666;
+  background-color: #cdcdcd;
+  color: black;
+  text-align: center;
+  width: 85%;
+
+}
+
+/* ### TODO ### Styles for Tagging component */
+.main__tagging
+{
+  margin: 1%;
+}
+.main__discovery
+{
+  margin: 1%;
+}
+/* ... your code here ... */
+
+
+/* ### TODO ### Styles for Discovery component */
+
+/* ... your code here ... */
+.discovery__map img {
+  width: 100%;
+}
+.discovery__results {
+  display: flex;
+ 
+}
+/*ul li {
+  border: 1px solid lightblue;
+  padding: 2px 2px;
+  background: rgb(236, 235, 235);
+  list-style-type: none;
+}*/
+/* ### TODO ### Styles for Footer Component */
+
+/* ... your code here ... */
+.footer {
+  background-color: lightgrey;
+  
+}
+/* ### TODO ### Media Queries */
+
+/* ... your code here ... */
